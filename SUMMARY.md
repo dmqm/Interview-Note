@@ -1,6 +1,6 @@
 # Summary
 
 * [Introduction](README.md)
-* [Java基础](chapter1.md)
-* [Spring](spring.md)
+* [Java基础](/note/Java基础.md)
+* [Spring基础](spring.md)
 
