@@ -4,7 +4,7 @@ Java开发
 
 * Java并发编程的艺术
 * 深入理解Java虚拟机
-* Effective Java
+* Effective Java（有点晦涩……）
 * Spring实战
 * 循序渐进Linux
 * 剑指offer
