@@ -1,6 +1,6 @@
 * ##### 概述
 
-  ![](/assets/import.png)
+  ![](/assets/spring-arch.png)
 
   * 核心容器  
     由spring-core，spring-beans，spring-context，spring-context-support和spring-expression等模块组成
