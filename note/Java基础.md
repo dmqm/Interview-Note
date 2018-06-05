@@ -24,6 +24,14 @@
 
     * 强征类型转换
 
+  * ###### String
+
+    String对象的value是final的
+
+    *  StringBuffer 和 StringBuilder  
+      由于String是不可变类，当涉及String的大量更改时，使用String会创建大量的对象，此时可以使用StringBuilder来进行字符串的修改  
+      StringBuffer是线程安全的，StringBuilder是非线程安全，单线程先速度快于StringBuffer
+
 * ##### 关键字
 
   * ###### final
