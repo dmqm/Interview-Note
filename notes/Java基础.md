@@ -26,7 +26,8 @@
 
   * ###### String
 
-    String对象的value是final的
+    String对象的value是final的  
+    在Java中将String设计成不可变的是综合考虑到各种因素的结果,如内存,同步,数据结构以及安全等方面的考虑
 
     * StringBuffer 和 StringBuilder  
       由于String是不可变类，当涉及String的大量更改时，使用String会创建大量的对象，此时可以使用StringBuilder来进行字符串的修改  
@@ -34,13 +35,13 @@
 
 * ##### 关键字
 
-  * ###### final
+  * ###### [final](http://www.cnblogs.com/dolphin0520/p/3736238.html)
 
   Java中final表最终，不可变，天然线程安全
 
-  * ###### static
+  * ###### [static](http://www.cnblogs.com/dolphin0520/p/3736238.html)
 
-  Java中static表静态
+  Java中static表静态，只有一个副本
 
 * ##### 继承
 
@@ -48,6 +49,7 @@
 * ##### 多态
 
   * ###### 重写和重载
+* ##### 错误和异常
 
 
 
