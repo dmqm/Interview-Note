@@ -1,7 +1,27 @@
 * ##### 底层原理
 
   * ###### volatile
+
+    volatile是轻量级的synchronized，保证了共享变量的可见性  
+    volatile执行写操作的时候会多出第二行带有lock前缀的汇编代码，将处理器缓存数据写入系统内存
+
+    * Lock前缀指令会引起处理器缓存回写到内存
+
+    * 一个处理器的缓存回写到内存会导致其他处理器的缓存无效
+
   * ###### synchronized
+
+    Java 1.6中引入偏向锁和轻量级锁，以及锁的存储结构和升级过程  
+    JVM基于进入和推出Monitor对象来实现方法同步和代码块同步
+
+    * [Java对象头![](/assets/Java-object-header.png)](https://blog.csdn.net/zhoufanyang_china/article/details/54601311)对象在内存中存储的布局可以分为三块区域：对象头（Header）、实例数据（Instance Data）和对齐填充（Padding）  
+      HotSpot虚拟机的对象头\(Object Header\)包括两部分信息，第一部分用于存储对象自身的运行时数据， 如哈希码（HashCode）、GC分代年龄、锁状态标志、线程持有的锁、偏向线程ID、偏向时间戳等等，这部分数据的长度在32位和64位的虚拟机（暂 不考虑开启压缩指针的场景）中分别为32个和64个Bits，官方称它为“Mark Word”
+
+    * ###### 锁的升级和对比
+
+      锁的状态从低到高：无锁，偏向锁，轻量级锁，重量级锁
+
+  * ###### 原子操作
 * ##### 内存模型
 
   * ###### 重排序
