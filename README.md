@@ -2,7 +2,6 @@ Java开发
 
 # Summary
 
-* [Introduction](README.md)
 * [Java基础](notes/Java基础.md)
 * [Java高级](notes/Java高级.md)
 * [Java并发](/notes/Java并发.md)
