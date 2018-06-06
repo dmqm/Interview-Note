@@ -80,6 +80,19 @@
 * ##### Java中的锁
 
   * ###### Lock接口
+  * ###### 队列同步器（AQS）
+
+    FIFO同步队列  
+    超时，中断
+
+  * ###### 重入锁ReentrantLock
+  * ###### 读写锁
+
+    分离出一个读锁一个写锁
+
+  * ###### Condition接口
+
+    依赖Lock对象，等待队列（AQS）
 * ##### 并发容器和框架
 
   * ###### ConcurrentHashMap
