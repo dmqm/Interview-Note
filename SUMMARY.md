@@ -5,8 +5,8 @@
 * [Introduction](README.md)
 * [算法基础](notes/算法基础.md)
 * [操作系统基础](/notes/操作系统基础.md)
-* [Linux基础](notes/Linux基础.md)
 * [计算机网络基础](/notes/计算机网络基础.md)
+* [数据库](notes/数据库.md)
 * [问题](issue.md)
 
 ## Java
