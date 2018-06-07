@@ -171,5 +171,12 @@
       * ###### execute\(\)，执行Runnable实例
       * ###### submit\(\)，返回future对象
 
+  * ##### Executor框架
+
+    工作单元Runnable，Callable，执行机制Executor  
+    ![](/assets/executor-arch.png)
+
+  * ###### ThreadPoolExector
+
 
 
