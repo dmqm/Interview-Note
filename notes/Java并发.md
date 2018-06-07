@@ -171,7 +171,7 @@
       * ###### execute\(\)，执行Runnable实例
       * ###### submit\(\)，返回future对象
 
-  * ##### Executor框架
+  * ##### [Executor框架](https://www.cnblogs.com/MOBIN/p/5436482.html)
 
     工作单元Runnable，Callable，执行机制Executor  
     ![](/assets/executor-arch.png)
@@ -189,7 +189,8 @@
 
   * ###### Future
 
-    接口Future和实现类FutureTask来表示异步计算的结果
+    接口Future和实现类FutureTask来表示异步计算的结果  
+    可以把FutureTask交给Executor执行，或通过ExecutorService.submit\(……\)返回一个FutureTask
 
 
 
