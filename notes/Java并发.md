@@ -178,5 +178,18 @@
 
   * ###### ThreadPoolExector
 
+    SingleThreadExecutor，单个线程  
+    FixedThreadExecutor，固定线程数  
+    CachedThreadExecutor，根据需要创建新线程
+
+  * ###### ScheduledThreadPoolExecutor
+
+    ScheduledThreadPoolExecutor，若干线程  
+    SingleThreadPoolExecutor，一个线程
+
+  * ###### Future
+
+    接口Future和实现类FutureTask来表示异步计算的结果
+
 
 
