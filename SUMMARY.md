@@ -1,6 +1,6 @@
 # Summary
 
-## 综合
+## Others
 
 * [Introduction](README.md)
 * [算法基础](notes/算法基础.md)
