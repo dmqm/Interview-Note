@@ -85,7 +85,10 @@
     FIFO同步队列  
     超时，中断
 
-  * ###### 重入锁ReentrantLock
+  * ###### 重入锁（ReentrantLock）
+
+    通过组合自定义同步器来实现锁的获取与释放
+
   * ###### 读写锁
 
     分离出一个读锁一个写锁
@@ -98,10 +101,75 @@
   * ###### ConcurrentHashMap
   * ###### ConcurrentLinkedQueue
   * ###### 阻塞队列
+
+    * ###### ArrayBlockingQueue
+    * ###### LinkedBlockingQueue
+    * ###### PriorityBlockingQueue
+
+      优先级排序，无界
+
+    * ###### DelayQueue
+
+      PriorityBlockingQueue实现，延时
+
+    * ###### SynchronousQueue
+
+      不存储元素，每个put操作要等待一个take操作
+
+    * ###### LinkedTransferQueue
+
+      无界
+
+    * ###### LinkedBlockingDeque
+
+      无界，双向
   * ###### Fork/Join框架
 * ##### 原子操作类
+
+  * ###### 原子更新基本类型类
+
+    AtomicBoolean，AtomicInteger，AtomicLong，Unsafe类的CAS方法实现
+
+  * ###### 原子更新数组
+
+    AtomicIntegerArray，AtomicLongArray，AtomicReferenceArray
 * ##### 并发工具类
-* ##### 线程池
+
+  * ###### CountDownLatch
+
+    等待多线程完成，直到计数器为0
+
+  * ###### CyclicBarrier
+
+    同步屏障，可用于多线程计算器最后合并结果
+
+  * ###### Semaphore
+
+    信号量，acquire\(\),release\(\)
+
+  * ###### Exchanger
+
+    交换者，线程间交换数据
+
+  * ##### 线程池
+
+    降低资源消耗，提高响应速度，提高线程的可管理性
+
+    * ###### 策略
+
+      如果当前运行进程少于corePoolSize，创建新线程执行任务  
+      如果运行的线程等于或多于corePoolSize，将任务加入BlockingQueue  
+      如果无法将任务加入BlockingQueue（队列满），创建新线程执行 任务  
+      如果创建新线程将使当前运行的线程超过maximumPoolSize，任务将被拒绝  
+      注意创建新线程需获取全局锁  
+      ![](/assets/threadpoolexecutor-policy.png)
+
+    * ###### 线程池的使用
+
+      new ThreadPoolExecutor\(corePoolSize,maximumPoolSize,keepAliveTime,millseconds,runnableTaskQueue,handle\)
+
+      * ###### execute\(\)，执行Runnable实例
+      * ###### submit\(\)，返回future对象
 
 
 
