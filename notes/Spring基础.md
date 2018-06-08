@@ -26,11 +26,10 @@
 
   * [跟踪请求](https://www.cnblogs.com/leskang/p/6101368.html)  
     ![](/assets/spring-mvc-archimport.png)
-
-  * ###### 控制器
-  * ###### 接收请求的输入
-  * ###### 处理表单
 * ##### 后端中的Spring
+
+  * ###### 数据持久化
+  * ###### 缓存数据
 * ##### Spring Boot
 
 
