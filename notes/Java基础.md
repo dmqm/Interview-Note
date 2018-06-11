@@ -53,8 +53,8 @@
     2. 类可以实现很多个接口，但是只能继承一个抽象类  
     3. 类如果要实现一个接口，它必须要实现接口声明的所有方法。但是，类可以不实现抽象类声明的所有方法，当 然，在这种情况下，类也必须得声明成是抽象的  
     4. 抽象类可以在不提供接口方法实现的情况下实现接口。  
-    5. Java 接口中声明的变量默认都是 final 的。抽象类可以包含非 final 的变量。   
-    6. Java 接口中的成员函数默认是 public 的。抽象类的成员函数可以是 private，protected 或者是 public 。   
+    5. Java 接口中声明的变量默认都是 final 的。抽象类可以包含非 final 的变量。  
+    6. Java 接口中的成员函数默认是 public 的。抽象类的成员函数可以是 private，protected 或者是 public 。  
     7. 接口是绝对抽象的，不可以被实例化。抽象类也不可以被实例化，但是，如果它包含 main 方法的话是可以被调用的
 * ##### 多态
 
@@ -62,6 +62,27 @@
 
     Overload 是重载的意思，Override 是覆盖的意思，也就是重写
 * ##### 错误和异常
+
+  Java中有Error和Exception，它们都是继承自Throwable类。  
+  二者的不同之处  
+  Exception：  
+  可以是可被控制\(checked\) 或不可控制的\(unchecked\)。  
+  表示一个由程序员导致的错误。  
+  应该在应用程序级被处理。  
+  Error：  
+  总是不可控制的\(unchecked\)。  
+  经常用来用于表示系统错误或低层资源的错误。  
+  如何可能的话，应该在系统级被捕捉。
+
+  * ###### Exception
+
+    * ###### Checked exception
+
+      这类异常都是Exception的子类。异常的向上抛出机制进行处理，假如子类可能产生A异 常，那么在父类中也必须throws A异常。可能导致的问题：代码效率低，耦合度过高
+
+    * ###### Unchecked exception
+
+      这类异常都是RuntimeException的子类，虽然RuntimeException同样也是 Exception的子类，但是它们是非凡的，它们不能通过client code来试图解决，所以称为Unchecked exception 。
 
 
 
