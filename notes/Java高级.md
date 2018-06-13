@@ -92,6 +92,9 @@
   [https://blog.csdn.net/sinat\_38259539/article/details/71799078](https://blog.csdn.net/sinat_38259539/article/details/71799078)
 
 * ##### 动态代理
+
+  [http://www.cnblogs.com/xiaoluo501395377/p/3383130.html](http://www.cnblogs.com/xiaoluo501395377/p/3383130.html)
+
 * ##### Java NIO
 
   [https://www.cnblogs.com/geason/p/5774096.html](https://www.cnblogs.com/geason/p/5774096.html)
