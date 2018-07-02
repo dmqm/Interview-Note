@@ -7,7 +7,6 @@
 * [算法](notes/算法基础.md)
 * [计算机网络](/notes/计算机网络基础.md)
 * [数据库](notes/数据库.md)
-* [问题](issue.md)
 
 ## Java
 
